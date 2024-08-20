@@ -1,0 +1,171 @@
+/* Estilo geral do corpo */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo do cabeçalho da página */
+.navbar {
+    background-color: #ff6f61; /* Cor vibrante para o cabeçalho */
+}
+
+.navbar-brand {
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.75rem;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+}
+.navbar-brand span {
+    font-size: 40px;
+    font-weight: bold;
+    color: #333; /* Cor do texto */
+}
+.navbar-nav .nav-link {
+    color: #fff;
+    font-weight: 500;
+    margin-left: 15px;
+}
+html, body {
+    height: 100%;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+/* Estrutura geral da página */
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+/* Conteúdo principal deve crescer para preencher o espaço */
+.content {
+    flex: 1;
+    padding: 20px;
+    padding-bottom: 100px; /* Ajustar conforme necessário */
+}
+
+.header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 3px 3px 6px rgba(0,0,0,0.5);
+}
+
+/* Estilo dos cartões de lanches */
+.card {
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    color: #ff6f61;
+}
+
+.card-text {
+    font-size: 1.1rem;
+    color: #555;
+}
+
+/* Estilo dos formulários */
+.form-group label {
+    font-weight: bold;
+    color: #ff6f61;
+}
+
+.form-control {
+    border-radius: 8px;
+    border: 1px solid #ddd;
+    box-shadow: none;
+    padding: 10px;
+}
+
+.form-control:focus {
+    border-color: #ff6f61;
+    box-shadow: 0 0 0 0.2rem rgba(255, 105, 97, 0.25);
+}
+
+/* Estilo dos botões */
+.btn-primary {
+    background-color: #ff6f61;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #ff4c4c;
+}
+
+.btn-success {
+    background-color: #28a745;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.btn-success:hover {
+    background-color: #218838;
+}
+
+/* Estilo dos alertas */
+.alert {
+    border-radius: 8px;
+    padding: 15px;
+    margin-bottom: 20px;
+}
+
+/* Estilo para a tabela do carrinho */
+.table {
+    margin-top: 20px;
+}
+
+.table th, .table td {
+    text-align: center;
+}
+
+.table .btn {
+    margin: 0;
+}
+header {
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #fff; /* Ou a cor de fundo que preferir */
+}
+
+.logo {
+    max-width: 150px; /* Ajuste o tamanho da logo conforme necessário */
+    height: auto;
+}
+.bg-custom {
+    background-color: #ff6f61; /* Cor de fundo personalizada */
+    border-radius: 5px; /* Bordas arredondadas */
+}
+.payment-icons {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espaçamento entre os ícones */
+    margin-top: 10px;
+}
+
+.payment-icon {
+    width: 70px; /* Tamanho dos ícones */
+    height: auto;
+}

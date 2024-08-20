@@ -1,0 +1,40 @@
+{% extends "layout.html" %}
+
+{% block title %}Checkout{% endblock %}
+
+{% block content %}
+<h2>Pedido Finalizado</h2>
+<p>Seu pedido foi realizado com sucesso!</p>
+<p>Total: R$ {{ total }}</p>
+<a href="{{ url_for('index') }}" class="btn btn-primary">Voltar aos Lanches</a>
+{% endblock %}
+<div class="checkout-payment-methods">
+    <h3>Formas de Pagamento</h3>
+    <div class="payment-icons">
+    </div>
+</div>
+<form action="{{ url_for('checkout') }}" method="POST">
+    <h3>Escolha o Método de Pagamento</h3>
+    
+    <div class="form-group">
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="metodo_pagamento" id="cartao" value="cartao" checked>
+            <label class="form-check-label" for="cartao">
+                Cartão de Crédito/Débito
+            </label>
+        </div>
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="metodo_pagamento" id="pix" value="pix">
+            <label class="form-check-label" for="pix">
+                PIX 
+            </label>
+        </div> 
+        <div class="form-check">
+            <input class="form-check-input" type="radio" name="metodo_pagamento" id="Dinheiro" value="Dinheiro" checked>
+            <label class="form-check-label" for="cartao">
+                Dinheiro
+            </label>
+        </div>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Finalizar Pedido</button>
+</form>

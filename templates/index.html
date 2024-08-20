@@ -1,0 +1,33 @@
+{% extends "layout.html" %}
+
+{% block content %}
+    <h2>Lanches</h2>
+    <div class="row">
+        {% for lanche in lanches %}
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ lanche[1] }}</h5>
+                        <p class="card-text">R$ {{ lanche[2] }}</p>
+                        <a href="{{ url_for('add_to_cart', item_id=lanche[0], item_type='lanche') }}" class="btn btn-primary">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    
+    <h2>Bebidas</h2>
+    <div class="row">
+        {% for bebida in bebidas %}
+            <div class="col-md-4">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h5 class="card-title">{{ bebida[1] }}</h5>
+                        <p class="card-text">R$ {{ bebida[2] }}</p>
+                        <a href="{{ url_for('add_to_cart', item_id=bebida[0], item_type='bebida') }}" class="btn btn-primary">Adicionar ao Carrinho</a>
+                    </div>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+{% endblock %}

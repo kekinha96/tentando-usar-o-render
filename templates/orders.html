@@ -1,0 +1,14 @@
+{% extends "layout.html" %}
+
+{% block title %}Meus Pedidos{% endblock %}
+
+{% block content %}
+<h2>Histórico de Pedidos</h2>
+<ul class="list-group">
+    {% for pedido in pedidos %}
+    <li class="list-group-item">
+        <strong>Pedido #{{ pedido[0] }}</strong>: {{ pedido[2] }} - Total: R$ {{ pedido[3] }}
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

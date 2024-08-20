@@ -1,0 +1,14 @@
+{
+    "builds": [
+      {
+        "src": "C:/Users/julia/Downloads/projeto cesar/api/app.py",
+        "use": "@vercel/python"
+      }
+    ],
+    "routes": [
+      {
+        "src": "/(.*)",
+        "dest": "C:/Users/julia/Downloads/projeto cesar/api/app.py"
+      }
+    ]
+  }
